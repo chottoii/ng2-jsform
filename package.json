@@ -1,6 +1,6 @@
 {
   "name": "ng2-jsform",
-  "version": "0.0.0-bata.2",
+  "version": "0.0.0-bata.3",
   "description": "JSON schema form on Angular4+",
   "main": "dist/index.js",
   "author": "Tatsuyoshi Tokumura",

@@ -1,0 +1,68 @@
+{
+  "name": "ng2-jsform",
+  "version": "0.0.0-bata.1",
+  "description": "JSON schema form on Angular4+",
+  "main": "dist/index.js",
+  "author": "Tatsuyoshi Tokumura",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist/",
+    "build:aot": "ngc -p tsconfig.json",
+    "build:jit": "tsc -p tsconfig.json",
+    "build": "rename node_modules_backup node_modules && npm run clean && npm run build:aot",
+    "install:peers": "npm-install-peers",
+    "demo:install": "cd demo && yarn install",
+    "demo:start": "rename node_modules node_modules_backup && cd demo && yarn start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milkyway/ng2-jsform"
+  },
+  "keywords": [
+    "angular2",
+    "json schema",
+    "i18n",
+    "material",
+    "schema form"
+  ],
+  "bugs": {
+    "url": "https://github.com/milkyway/ng2-jsform/issues"
+  },
+  "dependencies": {
+    "@angular/animations": "^5.0.5",
+    "@angular/cdk": "^5.0.0-rc.2",
+    "@angular/common": "^5.0.0",
+    "@angular/compiler": "^5.0.0",
+    "@angular/core": "^5.0.0",
+    "@angular/flex-layout": "2.0.0-beta.10",
+    "@angular/forms": "^5.0.0",
+    "@angular/http": "^5.0.0",
+    "@angular/material": "^5.0.0-rc.2",
+    "@angular/platform-browser": "^5.0.0",
+    "@angular/platform-browser-dynamic": "^5.0.0",
+    "@angular/router": "^5.0.0",
+    "body-parser": "^1.17.2",
+    "core-js": "^2.4.1",
+    "hammerjs": "^2.0.8",
+    "jquery": "^3.2.1",
+    "json-schema-ref-parser": "^4.0.4",
+    "rxjs": "5.5.2",
+    "zone.js": "^0.8.4",
+    "linq": "^3.0.8",
+    "methods": "^1.1.2",
+    "raw-loader": "0.5.1",
+    "typescript": "^2.2.2",
+    "z-schema": "^3.17.0"
+  },
+  "peerDependencies": {
+  },
+  "devDependencies": {
+    "@angular/cli": "1.5.5",
+    "@angular/compiler-cli": "^5.0.0",
+    "@angular/platform-server": "^4.2.5",
+    "@types/jasmine": "2.5.38",
+    "@types/node": "~6.0.60",
+    "npm-install-peers": "^1.1.0",
+    "rimraf": "^2.6.1"
+  }
+}

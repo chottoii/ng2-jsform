@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="ja" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="18073d5bd11d757a81f18680235c915ff066cef9" datatype="html">
+        <source>Company</source>
+        <target>会社</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src\app\page2\page2.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Company placeholder</note>
+        <note priority="1" from="meaning">Stationery form</note>
+      </trans-unit>
+      <trans-unit id="fee20472cf62e573fa3908def81758ac1a052f5e" datatype="html">
+        <source>First name</source>
+        <target>名前</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src\app\page2\page2.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">First name placeholder</note>
+        <note priority="1" from="meaning">Stationery form</note>
+      </trans-unit>
+      <trans-unit id="afe4a17a57b3850dc51e32e90f4dd961dc729299" datatype="html">
+        <source>Last name</source>
+        <target>姓名</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src\app\page2\page2.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Last name placeholder</note>
+        <note priority="1" from="meaning">Stationery form</note>
+      </trans-unit>
+      <trans-unit id="85fcd6fdcb794e554107318779c942b986511fc6" datatype="html">
+        <source>Address</source>
+        <target>住所</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src\app\page2\page2.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">Address placeholder</note>
+        <note priority="1" from="meaning">Stationery form</note>
+      </trans-unit>
+      <trans-unit id="50dd8624320c11b6d07cd41c0c2f2e19ad7ced80" datatype="html">
+        <source>Address2</source>
+        <target>住所2</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src\app\page2\page2.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">Address2 placeholder</note>
+        <note priority="1" from="meaning">Stationery form</note>
+      </trans-unit>
+      <trans-unit id="9da422953494729e3c24ec29b01bc01f45e01afc" datatype="html">
+        <source>City</source>
+        <target>市</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src\app\page2\page2.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">City placeholder</note>
+        <note priority="1" from="meaning">Stationery form</note>
+      </trans-unit>
+      <trans-unit id="7bbc1992e86126cedf3a46bb6b44c2caf30937a9" datatype="html">
+        <source>State</source>
+        <target>州</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src\app\page2\page2.component.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <note priority="1" from="description">State placeholder</note>
+        <note priority="1" from="meaning">Stationery form</note>
+      </trans-unit>
+      <trans-unit id="cc6d37aee301ebd30818d64fce1b1b4ef1d991b1" datatype="html">
+        <source>Postal Code</source>
+        <target>郵便番号</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src\app\page2\page2.component.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <note priority="1" from="description">Postal Code placeholder</note>
+        <note priority="1" from="meaning">Stationery form</note>
+      </trans-unit>
+      <trans-unit id="6024925a15a413b40f5fb802e925935cce37ac0e" datatype="html">
+        <source>regist</source>
+        <target>登録</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src\app\page2\page2.component.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <note priority="1" from="description">Submit button</note>
+        <note priority="1" from="meaning">Stationery form</note>
+      </trans-unit>
+      <trans-unit id="8def8481e91291a52f9baa31cbdb313e6a6ca02b" datatype="html">
+        <source>Hello i18n!</source>
+        <target>こんにちは i18n!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src\app\app.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">i18n</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

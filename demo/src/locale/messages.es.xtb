@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE translationbundle [
+<!ELEMENT translationbundle (translation)*>
+<!ATTLIST translationbundle lang CDATA #REQUIRED>
+
+<!ELEMENT translation (#PCDATA|ph)*>
+<!ATTLIST translation id CDATA #REQUIRED>
+<!ATTLIST translation desc CDATA #IMPLIED>
+<!ATTLIST translation meaning CDATA #IMPLIED>
+<!ATTLIST translation xml:space (default|preserve) "default">
+
+<!ELEMENT ph (#PCDATA|ex)*>
+<!ATTLIST ph name CDATA #REQUIRED>
+
+<!ELEMENT ex (#PCDATA)>
+]>
+<translationbundle lang="en">
+  <translation id="4150330030790364157" desc="i18n">Hello i18n!</translation>
+  <translation id="4583203182136820731" desc="Company placeholder" meaning="Stationery form">Company</translation>
+  <translation id="2392264699712415169" desc="First name placeholder" meaning="Stationery form">First name</translation>
+  <translation id="8104121210025419188" desc="Last name placeholder" meaning="Stationery form">Last name</translation>
+  <translation id="4316264723963622884" desc="Address placeholder" meaning="Stationery form">Address</translation>
+  <translation id="4539140618708788659" desc="Address2 placeholder" meaning="Stationery form">Address2</translation>
+  <translation id="5558923862059331232" desc="City placeholder" meaning="Stationery form">City</translation>
+  <translation id="3529829100635915349" desc="State placeholder" meaning="Stationery form">State</translation>
+  <translation id="7002501024191437968" desc="Postal Code placeholder" meaning="Stationery form">Postal Code</translation>
+  <translation id="8823731912110250993" desc="Submit button" meaning="Stationery form">regist</translation>
+</translationbundle>

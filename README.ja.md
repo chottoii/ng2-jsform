@@ -1,43 +1,41 @@
 # Angular JSON Schema form + material + i18n
 
-ng2-jsform is a library that generates a form that operates on Angular 4 (over) from a JSON Schema format definition.
+ng2-jsformは、JSON Schema形式の定義体からAngular4 (over)上で動作するformを生成するライブラリです。
 
-[このページは機械翻訳です。日本語が読める方はこちらを参照してください。](./README.ja.md)
+## 特徴
 
-## feature
+ng2-jsformは、国際化に対応しています。各言語のメッセージデータを用意すれば、動的な表示切替が可能です。
+主な機能を列挙します。
 
-ng2-jsform is compatible with internationalization. Dynamic display switching is possible if message data of each language is prepared.
-List the main functions.
+* materialデザイン
+* flexレイアウト対応
+* 国際化対応
+* カスタムwidgets
 
-* material design
-* flex layout support
-* Internationalization
-* Custom widgets
+また、widgets間を連携させることで多彩なformを生成できます。
 
-And, by linking widgets, you can generate various forms.
+* form要素の値に応じて、表示・非表示を動的に切り替える機能
+* select項目毎にinputヒントを動的に切り替える機能
+* 2つのselectの親子関係を設定する機能
+* 選択した項目でグループ化されたwidgetsの表示・非表示を動的に切り替える機能
+* 選択項目をグルーピングする機能
+* グルーピングした項目をポップアップダイアログで選択する機能
+* 選択項目を一括して選択・非選択する機能
 
-* Function to dynamically switch display / non-display according to the value of form element
-* Function to dynamically switch input hints for each select item
-* The ability to set the parent-child relationship of two select
-* The ability to dynamically switch display / non-display of widgets grouped by selected items
-* Function to group selected items
-* The function to select the grouped items in the popup dialog
-* Function to select and deselect all selected items at once
-
-## demos
+## デモ
 
 http://chotto-ii.com/ng2-jsform/demo/
 
-## docs
+## マニュアル
 
-Detail is,
-Http://chotto-ii.com/ng2-jsform/manual/
-Please refer to. (Note: Japanese.)
+詳細は、
+　http://chotto-ii.com/ng2-jsform/manual/
+を参照してください。（注記：日本語です。）
 
-## quick start
+## クイックスタート
 
-If you want to check the operation, please follow the steps below.
-Note: Please set up node.js and yarn in advance.
+動作確認したい場合は、以下の手順を実行してください。
+node.jsとyarnを予めセットアップしておいてください。
 
 ```
   git clone https://github.com/milkeyway/ng2-jsform-sample.git ng2-jsform-sample
@@ -46,20 +44,20 @@ Note: Please set up node.js and yarn in advance.
   yarn start
 ```
 
-## Installation
+## インストール
 
-To build a development environment, please follow the procedure below.
+開発環境を構築する場合は、以下の手順を行ってください。
 
-### step1 Create a project of angular cli
+### step1 angular cliのプロジェクトを作成
 
 ```
 npm i -g angular-cli
 ng new sample --style=scss --routing=true
 ```
 
-### step2 Set up Angular Material
+### step2 Angular Materialのセットアップ
 
-Please set up Angular Matetial with reference to the following.
+以下を参照して、Angular Matetialをセットアップしてください。
 
 https://material.angular.io/guide/getting-started
 
@@ -85,7 +83,7 @@ import 'hammerjs';
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 ```
 
-### step3 Set up Angular Material ng2-jsform
+### step3 ng2-jsformのセットアップ
 
 ```
 cd sample
@@ -144,15 +142,14 @@ import { TopComponent } from './top/top.component';
   ];
 ```
 
-### step4 Writing an application
+### step4 アプリケーションの記述
 
-I will create a simple application that can switch between Japanese and English.
-Please download the top component and definition from below and overwrite it in the app folder.
+日本語と英語の切替ができる簡単なアプリケーションを作成します。
+トップコンポーネントと定義体を下記からダウンロードして、appフォルダに上書きしてください。
 
 http://chotto-ii.com/ng2-jsform/data/app.zip
 
-
-Rewrite app.component.html, app.component.ts, app.component.scss as follows.
+app.component.html、app.component.ts、app.component.scssを以下のように書き換えます。
 
 ```
 <div id="wrap" *ngIf="pageView">
@@ -242,9 +239,9 @@ mat-button-toggle {
 }
 ```
 
-### step4 Start-up
+### step4 実行
 
-It is useful to add --open to ng serve so that the browser opens automatically at run time.
+実行時に自動でブラウザが開くようにng serveに--openを追加しておくと便利です。
 
 #### Edit package.json
 
@@ -253,18 +250,18 @@ It is useful to add --open to ng serve so that the browser opens automatically a
      …
      "start": "ng serve --open",
      …
-   },
+   }, 
 ```
 
-#### Start-up
+#### アプリケーションの実行
 
 ```
 yarn start
 ```
 
-Please access http: // localhost: 4200 / from the browser.
+ブラウザから http://localhost:4200/ にアクセスしてください。
 
-## Dependencies
+## 依存関係
 
 ng2-jsformは、以下に依存します。
 
@@ -276,11 +273,11 @@ ng2-jsformは、以下に依存します。
 
 ## TODO
 
-* Draft 6 automatic conversion of JSON Schema's Draft 4
-* Custom validator
+* JSON SchemaのDraft4のDraft6自動変換
+* カスタムバリデータ
 * textarea
 * file
-* WAI-ARIA compatible
+* WAI-ARIA対応
 
 ## License
 

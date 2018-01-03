@@ -1,0 +1,69 @@
+- type: wrapper
+  title: wrapper-title
+  note: wrapper-note
+  open: true
+  openLabel: open
+  closeLabel: close
+  items: 
+  - type: section
+    direction: row
+    items: 
+    - type: input
+      key: name
+      title: name
+      placeholder: name
+      hint: name-hint
+      width: 300px
+    - type: input
+      key: email
+      title: email
+      placeholder: email
+    - type: radio
+      key: gender
+      title: gender
+      width: auto
+      labelPosition: start
+      direction: column
+      labelWidth: 100px
+      buttonColor: primary
+      itemDirection: row
+      master: gender
+      itemWidth: 100px
+    - type: select
+      key: gender
+      title: gender
+      width: auto
+      labelPosition: start
+      direction: row
+      buttonColor: primary
+      itemDirection: row
+      master: gender
+  - type: section
+    direction: row
+    items: 
+    - type: checkbox
+      key: married
+      title: married
+      width: 20%
+    - type: section
+      key: hoby
+      title: hoby
+      direction: row
+      items: 
+      - type: checkbox
+        key: reading
+        title: reading
+        width: 200px
+      - type: checkbox
+        key: sports
+        title: sports
+        width: 200px
+- type: section
+  direction: row
+  items: 
+  - type: button
+    title: regist
+    kind: submit
+    id: 1
+    width: 120px
+    color: primary

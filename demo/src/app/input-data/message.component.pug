@@ -1,0 +1,32 @@
+mat-card
+  div(fxLayout='row')
+    div(fxFlex="100", fxLayout="column", fxLayout.xs="row")
+      //- コントロール
+      div(fxLayout="row")
+        button(mat-raised-button, color="primary", (click)="save()") 保存
+      //- 定義体
+      div(fxFlex="40", fxLayout="row", fxLayout.xs="column")
+        div(fxFlex="50")
+          mat-card-title Message(japanese)
+            | &nbsp;
+            a.with-link(id="msgja-exports", target="_blank", (click)="exports('msgja-exports', 'msgja-contents', 'msgja.json')") exports
+            | &nbsp;<br />imports&nbsp;
+            input.with-link(id="msgja-imports", type="file", (click)="imports('msgja-imports', 'msgja-contents')", value="imports")
+          mat-card-content
+            textarea(
+              [(ngModel)]="messageJaString",
+              id="msgja-contents",
+              rows="40",
+              cols="80")
+        div(fxFlex="50")
+          mat-card-title Message(english)
+            | &nbsp;
+            a.with-link(id="msgen-exports", target="_blank", (click)="exports('msgen-exports', 'msgen-contents', 'msgen.json')") exports
+            | &nbsp;<br />imports&nbsp;
+            input.with-link(id="msgen-imports", type="file", (click)="imports('msgen-imports', 'msgen-contents')", value="imports")
+          mat-card-content
+            textarea(
+              [(ngModel)]="messageEnString",
+              id="msgen-contents",
+              rows="40",
+              cols="80")

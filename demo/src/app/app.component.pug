@@ -1,0 +1,25 @@
+div#wrap
+
+  mat-toolbar(color="primary")
+    button(mat-button="", routerLink="/")
+      mat-icon home 
+      | &nbsp;{{title}}
+
+    span.fill-remaining-space
+    div(fxLayout="row", fxShow="false", fxShow.gt-sm)
+      button(mat-button, routerLink="/auto-form") フォーム自動生成
+      button(mat-button, routerLink="/message") メッセージ
+      button(mat-button, routerLink="/master") マスタ
+    button(mat-button, [mat-menu-trigger-for]="menu", fxHide="false", fxHide.gt-sm)
+      mat-icon menu
+
+  mat-menu(x-position="before", #menu="matMenu")
+    button(mat-menu-item, routerLink="/auto-form") フォーム自動生成
+    button(mat-menu-item, routerLink="/message") メッセージ
+    button(mat-menu-item, routerLink="/master") マスタ
+
+  div#contents
+
+    router-outlet
+
+  mat-toolbar.footer footer

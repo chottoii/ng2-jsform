@@ -1,0 +1,80 @@
+
+<mat-card>
+  <mat-form-field>
+    <input matInput="matInput" placeholder="ページID" [(ngModel)]="pageId"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select placeholder="ページ種別" [(ngModel)]="pageId" (ngModelChange)="pageSet()">
+      <mat-optgroup *ngFor="let group of samplePage.group" [label]="group.title">
+        <mat-option *ngFor="let page of group.items" [value]="page.key">{{ page.name }}</mat-option>
+      </mat-optgroup>
+    </mat-select>
+  </mat-form-field>
+  <mat-radio-group [(ngModel)]="lang" (ngModelChange)="changeLang()">
+    <mat-radio-button value="1" color="primary">日本語</mat-radio-button>
+    <mat-radio-button value="2" color="primary">English</mat-radio-button>
+  </mat-radio-group>
+</mat-card>
+<mat-card *ngIf="viewFlag">
+  <div fxLayout="row">
+    <div fxFlex="70" *ngIf="message !== null &amp;&amp; master !== null">
+      <mat-card>
+        <js-form [combine]="combine" [debug]="true" (onClick)="submit($event)"></js-form>
+      </mat-card>
+    </div>
+    <div class="result" fxFlex="30">
+      <div *ngIf="payLoad"><strong>入力された値 <br/></strong>
+        <pre [innerHTML]="payLoad | json"></pre>
+        <hr/>
+      </div>
+      <mat-card-title>ページ一覧</mat-card-title>
+      <mat-card-content>
+        <button mat-raised-button="mat-raised-button" color="primary" (click)="registFavorite()">ページ保存</button>
+        <section *ngFor="let str of favoriteList; let i = index">
+          <header>
+            <h4 [innerHtml]="str"></h4><a class="with-link" href="javascript:void(0)" (click)="readFavorite(i)">読込</a>&nbsp;<a class="with-link" href="javascript:void(0)" (click)="updateFavorite(i)">更新</a>&nbsp;<a class="with-link" href="javascript:void(0)" (click)="removeFavorite(i)">削除</a>
+          </header>
+        </section>
+      </mat-card-content>
+    </div>
+  </div>
+</mat-card>
+<mat-card>
+  <div fxLayout="row">
+    <div fxFlex="100" fxLayout="column" fxLayout.xs="row">
+      <div fxLayout="row">
+        <button mat-raised-button="mat-raised-button" color="primary" (click)="ymlChange(true)">更新</button>
+      </div>
+      <hr/>
+      <div fxFlex="40" fxLayout="row" fxLayout.xs="column">
+        <div fxFlex="30"> 
+          <mat-card-title>
+            form layout&nbsp;<a class="with-link" id="form-exports" target="_blank" (click)="exports('form-exports', 'form-contents', 'form.yml')">exports</a>&nbsp;<br />imports&nbsp;
+            <input class="with-link" id="form-imports" type="file" (click)="imports('form-imports', 'form-contents')" value="imports"/>
+          </mat-card-title>
+          <mat-card-content>
+            <textarea [(ngModel)]="formString" id="form-contents" rows="20" cols="40"></textarea>
+          </mat-card-content>
+        </div>
+        <div fxFlex="30">
+          <mat-card-title>
+            JOSN Schema&nbsp;<a class="with-link" id="schema-exports" target="_blank" (click)="exports('schema-exports', 'schema-contents', 'schema.yml')">exports</a>&nbsp;<br />imports&nbsp;
+            <input class="with-link" id="schema-imports" type="file" (click)="imports('schema-imports', 'schema-contents')" value="imports"/>
+          </mat-card-title>
+          <mat-card-content>
+            <textarea [(ngModel)]="ymlString" id="schema-contents" rows="20" cols="40"></textarea>
+          </mat-card-content>
+        </div>
+        <div fxFlex="30">
+          <mat-card-title>
+            DATA&nbsp;<a class="with-link" id="data-exports" target="_blank" (click)="exports('data-exports', 'data-contents', 'data.json')">exports</a>&nbsp;<br />imports&nbsp;
+            <input class="with-link" id="data-imports" type="file" (click)="imports('data-imports', 'data-contents')" value="imports"/>
+          </mat-card-title>
+          <mat-card-content>
+            <textarea [(ngModel)]="dataString" id="data-contents" rows="20" cols="40"></textarea>
+          </mat-card-content>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-card>

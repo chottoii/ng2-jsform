@@ -1,0 +1,20 @@
+mat-card
+  div(fxLayout='row')
+    div(fxFlex="100", fxLayout="column", fxLayout.xs="row")
+      //- コントロール
+      div(fxLayout="row")
+        button(mat-raised-button, color="primary", (click)="save()") 保存
+      //- 定義体
+      div(fxFlex="40", fxLayout="row", fxLayout.xs="column")
+        div(fxFlex="100")
+          mat-card-title Master
+            | &nbsp;
+            a.with-link(id="master-exports", target="_blank", (click)="exports('master-exports', 'master-contents', 'master.json')") exports
+            | &nbsp;<br />imports&nbsp;
+            input.with-link(id="master-imports", type="file", (click)="imports('master-imports', 'master-contents')", value="imports")
+          mat-card-content
+            textarea(
+              [(ngModel)]="masterString",
+              id="master-contents",
+              rows="80",
+              cols="80")

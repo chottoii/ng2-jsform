@@ -1,0 +1,10 @@
+
+<div [formGroup]="parentGroup">
+  <mat-form-field>
+    <input matInput="matInput" [matDatepicker]="picker" placeholder="{{ option.title }}" ([ngModel])="inputDate" [formControlName]="option.key" (ngModelChange)="onDateChange($event, option)"/>
+    <mat-datepicker-toggle matSuffix="matSuffix" [for]="picker"></mat-datepicker-toggle>
+  </mat-form-field>
+  <mat-datepicker #picker=""></mat-datepicker>
+  <p>{{ inputDate }}</p>
+  <p>{{ option.key }}</p>
+</div>

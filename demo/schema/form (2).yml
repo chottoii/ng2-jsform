@@ -1,0 +1,50 @@
+- type: input
+  key: name
+  title: name
+  placeholder: name
+  hint: name-hint
+- type: input
+  key: email
+  title: email
+  placeholder: email
+- type: select
+  key: gender
+  title: gender
+  master: gender
+  width: 20%
+- type: checkbox
+  key: married
+  title: married
+  width: 20%
+- type: section
+  key: hoby
+  title: hoby
+  direction: row
+  kind: bundle
+  items: 
+    - type: checkbox
+      key: reading
+      title: reading
+      width: 200px
+    - type: checkbox
+      key: sports
+      title: sports
+      width: 200px
+- type: section
+  items: 
+    - type: input
+      key: city
+      title: city
+      placeholder: city
+      flex: 3 3 150px
+    - type: input
+      key: state
+      title: state
+      placeholder: state
+      flex: 1 1 50px
+    - type: input
+      key: postalCode
+      title: postalCode
+      placeholder: postalCode
+      flex: 2 2 100px
+  

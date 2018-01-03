@@ -1,0 +1,8 @@
+
+<div [formGroup]="parentGroup">
+  <mat-form-field class="full-width">
+    <input matInput="matInput" placeholder="{{ option.title | mk_ng2_i18n: page.pageID }}" [formControlName]="option.key"/>
+    <mat-error>{{ formErrors[option.key] }}</mat-error>
+  </mat-form-field>
+  <div *ngIf="option.remarks !== undefined">{{ option.remarks | mk_ng2_i18n: page.pageID }}</div>
+</div>

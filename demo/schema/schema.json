@@ -1,0 +1,99 @@
+{
+  "title": "wrapper&multiple session",
+  "properties": {
+    "name": {
+      "title": "Name",
+      "type": "string",
+      "minLength": 4
+    },
+    "email": {
+      "title": "Email",
+      "type": "string",
+      "pattern": "^\\S+@\\S+$",
+      "description": "email-description"
+    },
+    "gender": {
+      "title": "Gender",
+      "type": "string",
+      "enum": [
+        "male",
+        "female"
+      ]
+    },
+    "married": {
+      "title": "Married",
+      "type": "boolean"
+    },
+    "hoby": {
+      "type": "object",
+      "items": {
+        "type": "object",
+        "properties": {
+          "reading": {
+            "title": "reading",
+            "type": "boolean"
+          },
+          "sports": {
+            "title": "sports",
+            "type": "boolean"
+          },
+          "gardening": {
+            "title": "gardening",
+            "type": "boolean"
+          },
+          "watchingMovie": {
+            "title": "watching movie",
+            "type": "boolean"
+          },
+          "plasticModel": {
+            "title": "plastic model",
+            "type": "boolean"
+          },
+          "travel": {
+            "title": "travel",
+            "type": "boolean"
+          },
+          "handicraft": {
+            "title": "handicraft",
+            "type": "boolean"
+          },
+          "cooking": {
+            "title": "cooking",
+            "type": "boolean"
+          },
+          "watchingSports": {
+            "title": "watching sports",
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "city": {
+      "title": "City",
+      "type": "string"
+    },
+    "state": {
+      "title": "State",
+      "type": "string"
+    },
+    "postalCode": {
+      "title": "Postal Code",
+      "type": "string"
+    },
+    "comment": {
+      "title": "Comment",
+      "type": "string",
+      "maxLength": 20,
+      "validationMessage": "Don't be greedy!"
+    },
+    "comment2": {
+      "title": "Comment2",
+      "type": "string",
+      "maxLength": 20,
+      "validationMessage": "Don't be greedy!"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

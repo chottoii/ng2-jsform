@@ -1,5 +1,0 @@
-div([formGroup]="parentGroup")
-  mat-form-field.full-width
-    input(matInput, placeholder="{{ option.title | mk_ng2_i18n: page.pageID }}", [formControlName]="option.key")
-    mat-error {{ formErrors[option.key] }}
-  div(*ngIf="option.remarks !== undefined") {{ option.remarks | mk_ng2_i18n: page.pageID }}

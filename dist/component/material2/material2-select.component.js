@@ -8,19 +8,10 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-/**
- * history
- *  2017/10/30 group機能追加
- *  2017/10/30 composite機能追加
- *  2017/12/21 リスト変更時にマスタのdefaultプロパティがtureの場合に、規定値を設定
- *  2017/12/21 リストフィルタリングで現在の設定値が、リスト内に無い場合、第１要素の選択
- *  2017/12/21 動的バリデーション機能
- */
-import { Component, OnInit, OnDestroy, ChangeDetectionStrategy, Input, OnChanges, SimpleChange } from '@angular/core';
-import { AbstractControl } from '@angular/forms';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { JsfBaseComponent } from '../jsf-base.component';
 import { JsfService } from '../../service/jsf.service';
-var Material2SelectComponent = /** @class */ (function (_super) {
+var Material2SelectComponent = (function (_super) {
     __extends(Material2SelectComponent, _super);
     function Material2SelectComponent(jsf) {
         var _this = _super.call(this, jsf) || this;

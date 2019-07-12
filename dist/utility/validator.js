@@ -1,8 +1,5 @@
-// 履歴
-//  2017/12/21 patternの動的変更機能追加
-import { AbstractControl, NG_VALIDATORS, Validator, ValidatorFn, Validators } from '@angular/forms';
-import { isArray, isObject, isEmpty, isNumber, isString, isInteger, isBoolean, hasValue, isType } from './utility';
-var CustomValidators = /** @class */ (function () {
+import { isObject, isEmpty, isNumber, isString, isType } from './utility';
+var CustomValidators = (function () {
     function CustomValidators() {
     }
     /**

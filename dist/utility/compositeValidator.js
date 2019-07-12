@@ -1,7 +1,6 @@
-import { AbstractControl, NG_VALIDATORS, Validator, ValidatorFn, Validators } from '@angular/forms';
-import { isArray, isObject, isEmpty, isNumber, isString, isInteger, isBoolean, hasValue, isType } from './utility';
+import { isEmpty } from './utility';
 import { CustomValidators } from '../utility/validator';
-var CompositeValidators = /** @class */ (function () {
+var CompositeValidators = (function () {
     function CompositeValidators() {
     }
     /**

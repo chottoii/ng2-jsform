@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { MatButtonModule, MatCheckboxModule, MatDialogModule, MatInputModule, MatDatepickerModule, MatFormFieldModule, MatRadioModule, MatSelectModule, MatMenuModule, MatSlideToggleModule, MatListModule, MatCardModule, MatTabsModule, MatButtonToggleModule, MatIconModule, MatProgressSpinnerModule, MatTableModule, MatSortModule, MatPaginatorModule, MatToolbarModule, MatNativeDateModule, MatExpansionModule, MatChipsModule, MatAutocompleteModule, MatTooltipModule } from '@angular/material';
-var CustomMaterialModule = /** @class */ (function () {
+var CustomMaterialModule = (function () {
     function CustomMaterialModule() {
     }
     CustomMaterialModule.decorators = [
@@ -61,8 +61,6 @@ var CustomMaterialModule = /** @class */ (function () {
                     ],
                 },] },
     ];
-    /** @nocollapse */
-    CustomMaterialModule.ctorParameters = function () { return []; };
     return CustomMaterialModule;
 }());
 export { CustomMaterialModule };

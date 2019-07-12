@@ -1,7 +1,7 @@
-import { Component, Input, Output, EventEmitter, ViewChild, ViewContainerRef, ComponentFactoryResolver, ComponentRef, AfterContentInit, OnChanges } from '@angular/core';
+import { Component, Input, Output, EventEmitter, ViewChild, ViewContainerRef, ComponentFactoryResolver } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { SharedParametersService } from '../service/sharedParameters.service';
-var JsfRootComponent = /** @class */ (function () {
+var JsfRootComponent = (function () {
     function JsfRootComponent(compiler, shared) {
         this.compiler = compiler;
         this.shared = shared;

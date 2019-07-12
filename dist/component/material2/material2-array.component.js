@@ -8,15 +8,10 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-/**
- * 履歴
- *  2017/12/15 visibilityの採用によるデザイン補正
- */
-import { Component, Input, OnInit, OnDestroy, ChangeDetectionStrategy } from '@angular/core';
-import { AbstractControl } from '@angular/forms';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { JsfBaseComponent } from '../jsf-base.component';
 import { JsfService } from '../../service/jsf.service';
-var Material2ArrayComponent = /** @class */ (function (_super) {
+var Material2ArrayComponent = (function (_super) {
     __extends(Material2ArrayComponent, _super);
     function Material2ArrayComponent(jsf) {
         var _this = _super.call(this, jsf) || this;

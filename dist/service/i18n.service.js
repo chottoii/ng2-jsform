@@ -1,11 +1,6 @@
-/**
- * 履歴
- *  2017/11/29 文字列''を許容するかどうかの第三引数isNullableを追加 (falseの場合はキーが画面上に露出)
- *  2017/11/30 ページ識別子が未設定の場合、'common'を参照するように変更
- */
 import { Injectable } from '@angular/core';
 import { isString } from '../utility';
-var I18nService = /** @class */ (function () {
+var I18nService = (function () {
     function I18nService() {
     }
     I18nService.prototype.setDictionary = function (message) {

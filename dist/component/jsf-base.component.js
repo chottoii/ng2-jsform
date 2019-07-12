@@ -1,7 +1,7 @@
-import { Component, OnInit, OnDestroy, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { JsfService } from '../service/jsf.service';
-var JsfBaseComponent = /** @class */ (function () {
+var JsfBaseComponent = (function () {
     function JsfBaseComponent(jsf) {
         this.jsf = jsf;
         this.widgets = {};

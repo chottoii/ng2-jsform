@@ -1,17 +1,10 @@
-/**
- * 変更履歴
- *  2017/11/10 singletonへの変更
- *  2017/11/10 array要素が複数ある場合の初期化障害対応
- *  2017/12/21 動的バリデーション機能
- *  2017/12/30 スキーマ階層構造サポート
- */
 import { Injectable } from '@angular/core';
-import { FormControl, FormGroup, FormBuilder, FormArray, Validators } from '@angular/forms';
+import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { I18nService } from './i18n.service';
 import { CustomValidators } from '../utility/validator';
 import { CompositeValidators } from '../utility/compositeValidator';
 import { isEmpty } from '../utility';
-var JsfService = /** @class */ (function () {
+var JsfService = (function () {
     function JsfService(fb, i18n) {
         this.fb = fb;
         this.i18n = i18n;

@@ -1,17 +1,8 @@
-/**
- * 修正履歴
- *  2017/11/10 clearが効かない不具合に対応
- *  2017/11/25 refサポート
- *  2017/11/27 ngOnChangesの初期化手順による不具合対応
- *  2017/12/09 clear処理の自動化
- */
-import { Component, Input, Output, EventEmitter, OnInit, OnChanges } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { I18nService } from './service/i18n.service';
 import { JsfService } from './service/jsf.service';
-import { deepCopy } from './utility';
 import { MATERIAL2_DESIGN_COMPONENTS_LIST } from './component/material2/';
-var AutoFormMainComponent = /** @class */ (function () {
+var AutoFormMainComponent = (function () {
     function AutoFormMainComponent(i18n, jsf) {
         this.i18n = i18n;
         this.jsf = jsf;

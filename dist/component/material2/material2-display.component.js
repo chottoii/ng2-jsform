@@ -8,10 +8,10 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import { Component, OnInit, OnDestroy, Input, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { JsfBaseComponent } from '../jsf-base.component';
 import { JsfService } from '../../service/jsf.service';
-var Material2DisplayComponent = /** @class */ (function (_super) {
+var Material2DisplayComponent = (function (_super) {
     __extends(Material2DisplayComponent, _super);
     function Material2DisplayComponent(jsf) {
         var _this = _super.call(this, jsf) || this;

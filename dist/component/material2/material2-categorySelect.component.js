@@ -8,13 +8,10 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-// 履歴
-//  2017/12/21 暫定的にフィルタ機能を導入　採用するかどうか要検討
-import { Component, OnInit, OnDestroy, Input, ChangeDetectionStrategy } from '@angular/core';
-import { FormArray } from '@angular/forms';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { JsfBaseComponent } from '../jsf-base.component';
 import { JsfService } from '../../service/jsf.service';
-var Material2CategorySelectComponent = /** @class */ (function (_super) {
+var Material2CategorySelectComponent = (function (_super) {
     __extends(Material2CategorySelectComponent, _super);
     function Material2CategorySelectComponent(jsf) {
         var _this = _super.call(this, jsf) || this;

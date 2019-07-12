@@ -8,16 +8,11 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-/**
- * history
- *  2017/10/30 iconボタンサポート
- */
-import { Component, Input, OnInit, OnDestroy, Inject, ChangeDetectionStrategy } from '@angular/core';
-import { AbstractControl, FormGroup } from '@angular/forms';
+import { Component, Inject } from '@angular/core';
 import { JsfBaseComponent } from '../jsf-base.component';
 import { JsfService } from '../../service/jsf.service';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
-var Material2ButtonComponent = /** @class */ (function (_super) {
+var Material2ButtonComponent = (function (_super) {
     __extends(Material2ButtonComponent, _super);
     function Material2ButtonComponent(jsf, dialog) {
         var _this = _super.call(this, jsf) || this;
@@ -138,7 +133,7 @@ var Material2ButtonComponent = /** @class */ (function (_super) {
     return Material2ButtonComponent;
 }(JsfBaseComponent));
 export { Material2ButtonComponent };
-var AuxiliaryInputDialogComponent = /** @class */ (function () {
+var AuxiliaryInputDialogComponent = (function () {
     function AuxiliaryInputDialogComponent(dialogRef, data) {
         this.dialogRef = dialogRef;
         this.data = data;

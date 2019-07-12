@@ -1,6 +1,6 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import { Pipe } from '@angular/core';
 import { I18nService } from '../service/i18n.service';
-var I18nPipe = /** @class */ (function () {
+var I18nPipe = (function () {
     function I18nPipe(i18n) {
         this.i18n = i18n;
     }

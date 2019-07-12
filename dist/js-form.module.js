@@ -11,7 +11,7 @@ import { MATERIAL2_DESIGN_COMPONENTS } from './component/material2/';
 import { JsfBaseComponent } from './component/jsf-base.component';
 import { JsfRootComponent } from './component/jsf-root.component';
 import { AutoFormMainComponent } from './js-form.component';
-var JsFormModule = /** @class */ (function () {
+var JsFormModule = (function () {
     function JsFormModule() {
     }
     JsFormModule.decorators = [
@@ -45,8 +45,6 @@ var JsFormModule = /** @class */ (function () {
                     ]
                 },] },
     ];
-    /** @nocollapse */
-    JsFormModule.ctorParameters = function () { return []; };
     return JsFormModule;
 }());
 export { JsFormModule };

@@ -8,12 +8,10 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import { Component, OnInit, Input, OnDestroy, ChangeDetectionStrategy } from '@angular/core';
-import { AbstractControl } from '@angular/forms';
-import { FormGroup } from '@angular/forms';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { JsfBaseComponent } from '../jsf-base.component';
 import { JsfService } from '../../service/jsf.service';
-var Material2CheckboxComponent = /** @class */ (function (_super) {
+var Material2CheckboxComponent = (function (_super) {
     __extends(Material2CheckboxComponent, _super);
     function Material2CheckboxComponent(jsf) {
         var _this = _super.call(this, jsf) || this;
